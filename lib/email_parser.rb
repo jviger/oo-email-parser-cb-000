@@ -8,15 +8,16 @@ class EmailParser
   attr_accessor :emails
   
   def initialize(emails)
-    @emails
+    @emails = emails
   end
 
   def parse
-    emails.split.map do |email|
-      email.split(/\,/)
-    end
-  end
     
+    new_list = []
+    new_list = emails.split(/ |\,/)
+    new_list
+    
+  end
+  
+  
 end
-  
-  
