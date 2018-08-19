@@ -12,7 +12,7 @@ class EmailParser
   def self.parse
     
     new_list = []
-    new_list = self.split(/ |\,/)
+    new_list = self.emails.split(/ |\,/)
     new_list
     
   end
