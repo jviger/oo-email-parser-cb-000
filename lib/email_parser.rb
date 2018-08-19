@@ -11,7 +11,7 @@ class EmailParser
     @emails
   end
 
-  def self.parse
+  def parse
     
     new_list = []
     new_list = self.emails.split(/ |\,/)
