@@ -12,10 +12,10 @@ class EmailParser
   end
 
   def parse
-    
-    new_list = []
-    new_list = emails.split(/ |\,/)
-    new_list
+    emails.split.map do |email|
+    email.split(/ |\,/)
+    end
+  end
     
   end
   
