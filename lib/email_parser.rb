@@ -7,8 +7,8 @@ class EmailParser
   
   attr_accessor :emails
   
-  
-  
+  def initialize()
+
   def self.parse
     
     new_list = []
