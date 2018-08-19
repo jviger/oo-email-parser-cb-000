@@ -16,7 +16,7 @@ class EmailParser
     new_list = []
     new_list = emails.split(/ |\,/)
     new_list.delete_if { |x| x == ""}
-    new_list
+    new_list.uniq
   end
   
   
